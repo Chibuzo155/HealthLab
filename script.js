@@ -68,12 +68,4 @@ function blockAlgo(element){
     
 }
 
-// function replaceText(element){
-//     if(element.hasChildNodes()){
-//         element.childNodes.forEach(replaceText);
 
-//     } else if(element.nodeType === Text.TEXT_NODE){//if no children
-//         element.textContent = element.textContent.replace(/coronavirus/gi, '👹');
-
-//     }
-// }
