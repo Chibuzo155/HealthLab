@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Health Lab", 
+    "version": "0.1.0",
+    "icons": {"128": "icon.png"},
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Health Lab"
+    },
+    "permissions": ["tabs", "activeTab", "storage"],
+    "content_scripts":[ 
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "js": ["script.js"],
+            "css": ["styles.css"]
+        }
+    ],
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://maxcdn.bootstrapcdn.com/; object-src 'self'"
+
+}

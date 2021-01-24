@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Lab</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        html, body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 384px;
+            text-align: center;
+            background-color: rgb(255, 198, 198);
+        }
+
+        h1{
+            font-family: 'Helvetica', monospace;
+            font-size:30px;
+            font-weight: 400;
+            margin:0;
+        }
+
+        .moal-header{
+            align-items:center;
+            border-bottom: 0.5px solid white;
+        }
+
+        .modal-content{
+            padding: 0 22px
+        }
+
+        .modal-icons{
+            border-top: 0 .5px solid white;
+            height: 50px;
+            width: 100%
+        }
+
+        button{
+            padding: 10px;
+            border-radius: 15px 15px;
+            background-color: red;
+        }
+        .home_button{
+            background-color: white;
+        }
+        .rec_button{
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="modal-header">
+        <br>
+        <h1 class="logo">
+            <!-- <img src="icon.jpeg" alt="logo" class="logo-icon"> -->
+            Health Lab
+
+        </h1>
+    </div>
+    <div class="modal-content">
+        <i class="fa fa-youtube-play fa-3x"></i>
+        <h2>Choose Section to Hide!</h2><br>
+    </div>
+    <div class="modal-icons">
+        <div class="flex-container">
+            <div class="flex">
+                <button id="home" class="home_button"><i class="fa fa-home fa-2x"></i>
+                    
+                </button>
+                <br>Youtube Home Page
+            </div><br>
+            <div class="flex">
+                <button id="rec" class="rec_button"><i class="fa fa-columns fa-2x"></i> </button><br>
+                Youtube Recommendation Page
+            </div>
+            <br><br>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="popup.js"></script>
+</html>
